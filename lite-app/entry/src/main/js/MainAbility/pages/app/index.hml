@@ -1,0 +1,7 @@
+<div class="container" onswipe="goHome">
+    <text class="title">
+        {{ appinfo }}
+    </text>
+    <input type="button" style="background-color: darkred; width: 250px;" class="input" value="terminate" @click="onTerminate"></input>
+
+</div>

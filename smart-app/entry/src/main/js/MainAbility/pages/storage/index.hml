@@ -1,0 +1,14 @@
+<div class="container" onswipe="goHome">
+    <text class="title">
+        input: {{ title }}
+    </text>
+    <text class="title">
+        status: {{ status }}
+    </text>
+    <div class="row-container">
+        <input type="button" class="input" @click="onset" value="set"></input>
+        <input type="button" style="background-color: green;" class="input" value="get" @click="onget"></input>
+        <input type="button" style="background-color: red;" class="input" value="delete" @click="ondelete"></input>
+        <input type="button" style="background-color: darkred;" class="input" value="clear" @click="onclear"></input>
+    </div>
+</div>

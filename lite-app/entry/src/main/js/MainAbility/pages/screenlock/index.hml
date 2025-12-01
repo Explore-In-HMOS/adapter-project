@@ -1,0 +1,11 @@
+<div class="container" onswipe="goHome">
+    <text class="title" style="width: 240px;">
+        {{ result }}
+    </text>
+    <input style="background-color: rebeccapurple; width: 240px; margin: 12px 0px;  padding: 4px 12px; border-radius: 8px;" type="button" @click="isLocked"
+           value="is Locked"/>
+    <input style="background-color: rebeccapurple; width: 240px; margin: 12px 0px;  padding: 4px 12px; border-radius: 8px;" type="button" @click="isSecureMode"
+           value="is Secure Mode"/>
+    <input style="background-color: rebeccapurple; width: 240px; margin: 12px 0px;  padding: 4px 12px; border-radius: 8px;" type="button" @click="unlockScreen"
+           value="unlock"/>
+</div>

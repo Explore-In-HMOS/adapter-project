@@ -1,0 +1,42 @@
+<div class="container" onswipe="goHome">
+
+    <text class="title">
+        {{ result }}
+    </text>
+
+
+<!-- index.hml -->
+    <div class="todo-container">
+        <list class="todo-wraper">
+
+            <list-item class="todo-item">
+                <input type="button" style=" margin: 12px 0px; background-color: slateblue; padding: 4px 12px; border-radius: 8px;" class="input" @click="subscribeHeartRate">Start Heart Rate</input>
+            </list-item>
+
+            <list-item class="todo-item">
+                <input type="button" style=" margin: 12px 0px; background-color: slateblue; padding: 4px 12px; border-radius: 8px;" class="input" @click="subscribeOnBodyState">Start OnBody State</input>
+            </list-item>
+
+            <list-item class="todo-item">
+                <input type="button" style=" margin: 12px 0px; background-color: slateblue; padding: 4px 12px; border-radius: 8px;" class="input" @click="subscribeStepCounter">Start Step Counter</input>
+            </list-item>
+
+            <list-item class="todo-item">
+                <input type="button" style=" margin: 12px 0px; background-color: slateblue; padding: 4px 12px; border-radius: 8px;" class="input" @click="getOnBodyState">Get OnBody State</input>
+            </list-item>
+
+            <list-item class="todo-item">
+                <input type="button" style=" margin: 12px 0px; background-color: slateblue; padding: 4px 12px; border-radius: 8px;" class="input" @click="unsubscribeHeartRate">Stop Heart Rate</input>
+            </list-item>
+
+            <list-item class="todo-item">
+                <input type="button" style=" margin: 12px 0px; background-color: slateblue; padding: 4px 12px; border-radius: 8px;" class="input" @click="unsubscribeOnBodyState">Stop OnBody State</input>
+            </list-item>
+
+            <list-item class="todo-item">
+                <input type="button" style=" margin: 12px 0px; background-color: slateblue; padding: 4px 12px; border-radius: 8px;" class="input" @click="unsubscribeStepCounter">Stop Step Counter</input>
+            </list-item>
+
+        </list>
+    </div>
+</div>

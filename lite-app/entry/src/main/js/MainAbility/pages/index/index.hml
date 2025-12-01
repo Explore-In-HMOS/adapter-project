@@ -1,0 +1,66 @@
+<div class="container">
+    <text class="title">
+        HW Bundle Show Off
+    </text>
+    <list class="list">
+        <list-item class="item">
+            <input type="button" class="nav-button" @click="goCrypto">
+                Crypto
+            </input>
+        </list-item>
+        <list-item class="item">
+            <input type="button" class="nav-button" @click="goScreenLock">
+                Screen Lock
+            </input>
+        </list-item>
+        <list-item class="item">
+            <input type="button" class="nav-button" @click="goStorage">
+                Storage
+            </input>
+        </list-item>
+        <list-item class="item">
+            <input type="button" class="nav-button" @click="goGeolocaton">
+                Geolocation
+            </input>
+        </list-item>
+        <list-item class="item">
+            <input type="button" class="nav-button" @click="goApp">
+                App
+            </input>
+        </list-item>
+        <list-item class="item">
+            <input type="button" class="nav-button" @click="goBattery">
+                Battery
+            </input>
+        </list-item>
+        <list-item class="item">
+            <input type="button" class="nav-button" @click="goFile">
+                File
+            </input>
+        </list-item>
+        <list-item class="item">
+            <input type="button" class="nav-button" @click="goWearEngine">
+                Wear engine
+            </input>
+        </list-item>
+        <list-item class="item">
+            <input type="button" class="nav-button" @click="goToBrightness">
+                Brightness
+            </input>
+        </list-item>
+
+        <list-item class="item">
+            <input type="button" class="nav-button" @click="goToVibrator">
+                Vibrator
+            </input>
+        </list-item>
+
+        <list-item class="item">
+            <input type="button" class="nav-button" @click="goSensor">
+                Sensor
+            </input>
+        </list-item>
+
+    </list>
+
+</div>

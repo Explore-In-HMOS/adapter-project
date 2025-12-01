@@ -1,0 +1,29 @@
+<div class="container" onswipe="goHome">
+
+    <text class="title">
+        {{ title }}
+    </text>
+
+
+<!-- index.hml -->
+    <div class="todo-container">
+        <list class="todo-wraper">
+
+            <list-item  class="todo-item">
+                <input type="button" style=" margin: 12px 0px; background-color: slateblue; padding: 4px 12px; border-radius: 8px;"  class="input" @click="getVal">getVal</input>
+            </list-item>
+            <list-item  class="todo-item">
+                <input type="button" style=" margin: 12px 0px; background-color: slateblue; padding: 4px 12px; border-radius: 8px;"  class="input" @click="setVal">setValue</input>
+
+            </list-item>
+            <list-item  class="todo-item">
+                <input type="button" style="margin: 12px 0px; background-color: slateblue; padding: 4px 12px; border-radius: 8px;"  class="input" @click="setKeepScreenOn">setKeepScreenOn</input>
+
+            </list-item>
+            <list-item  class="todo-item">
+                <input type="button" style="margin: 12px 0px; background-color: slateblue; padding: 4px 12px; border-radius: 8px;"  class="input" @click="setKeepScreenOff">setKeepScreenOff</input>
+
+            </list-item>
+        </list>
+    </div>
+</div>

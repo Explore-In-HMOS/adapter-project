@@ -1,0 +1,21 @@
+{
+  "modelVersion": "5.1.0",
+  "description": "Please describe the basic information.",
+  "dependencies": {
+    "@hwbundle/router": "file:../hars/router.har",
+    "@hwbundle/cryptoframework": "file:../hars/cryptoframework.har",
+    "@hwbundle/screenlock": "file:../hars/screenlock.har",
+    "@hwbundle/app": "file:../hars/app.har",
+    "@hwbundle/geolocation": "file:../hars/geolocation.har",
+    "@hwbundle/storage": "file:../hars/storage.har",
+    "@hwbundle/battery": "file:../hars/battery.har",
+    "@hwbundle/file": "file:../hars/file.har",
+    "@hwbundle/device": "file:../hars/device.har",
+    "@hwbundle/configuration": "file:../hars/configuration.har",
+    "@hwbundle/sensor": "file:../hars/sensor.har",
+    "@hwbundle/brightness": "file:../hars/brightness.har",
+    "@hwbundle/vibrator": "file:../hars/vibrator.har",
+    "@hwbundle/wearengine": "file:../hars/wearengine.har"
+  },
+  "devDependencies": {}
+}

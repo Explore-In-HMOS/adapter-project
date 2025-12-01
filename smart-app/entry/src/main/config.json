@@ -1,0 +1,137 @@
+{
+    "app": {
+        "bundleName": "com.hmosdemos.showoff",
+        "vendor": "example",
+        "version": {
+            "code": 1000000,
+            "name": "1.0.0"
+        }
+    },
+    "deviceConfig": {},
+    "module": {
+        "deviceType": [
+            "wearable"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry",
+            "installationFree": false
+        },
+        "abilities": [
+            {
+                "name": ".MainAbility",
+                "srcLanguage": "js",
+                "srcPath": "MainAbility",
+                "icon": "$media:icon",
+                "description": "$string:MainAbility_desc",
+                "label": "$string:MainAbility_label",
+                "type": "page",
+                "formsEnabled": false,
+                "launchType": "standard",
+                "orientation": "unspecified",
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ],
+                "visible": true
+            }
+        ],
+        "reqPermissions": [
+            {
+                "name": "ohos.permission.READ_HEALTH_DATA",
+                "reason": "Access heart rate and health data",
+                "usedScene": {
+                    "ability": [
+                        "MainAbility"
+                    ],
+                    "when": "always"
+                }
+            },
+            {
+                "name": "ohos.permission.ACTIVITY_MOTION",
+                "reason": "Access step counter and motion data",
+                "usedScene": {
+                    "ability": [
+                        "MainAbility"
+                    ],
+                    "when": "always"
+                }
+            },
+            {
+                "name": "ohos.permission.LOCATION",
+                "reason": "Access step location data",
+                "usedScene": {
+                    "ability": [
+                        "MainAbility"
+                    ],
+                    "when": "always"
+                }
+            },
+            {
+                "name": "ohos.permission.APPROXIMATELY_LOCATION",
+                "reason": "Access step approximately location data",
+                "usedScene": {
+                    "ability": [
+                        "MainAbility"
+                    ],
+                    "when": "always"
+                }
+            },
+            {
+                "name": "ohos.permission.VIBRATE",
+                "reason": "Access vibrator",
+                "usedScene": {
+                    "ability": [
+                        "HiWearMainAbility"
+                    ],
+                    "when": "always"
+                }
+            }
+        ],
+        "metaData": {
+            "customizeData": [
+                {
+                    "name": "supportLists",
+                    "value": "MOBILEPACKAGENAME:MOBILEFINGERPRINT",
+                    "extra": ""
+                }
+            ]
+        },
+        "js": [
+            {
+                "pages": [
+                    "pages/index/index",
+                    "pages/crypto/index",
+                    "pages/screenlock/index",
+                    "pages/sensor/sensor",
+                    "pages/device/device",
+                    "pages/configuration/configuration",
+                    "pages/crypto/index",
+                    "pages/storage/index",
+                    "pages/geolocation/index",
+                    "pages/app/index",
+                    "pages/crypto/index",
+                    "pages/battery/battery",
+                    "pages/file/file",
+                    "pages/brightness/brightness",
+                    "pages/vibrator/vibrator",
+                    "pages/wear-engine/index"
+                ],
+                "name": ".MainAbility",
+                "window": {
+                    "autoDesignWidth": false,
+                    "designWidth": 466
+                }
+            }
+        ],
+        "mainAbility": ".MainAbility",
+        "package": "com.hmosdemos.showoff"
+    }
+}

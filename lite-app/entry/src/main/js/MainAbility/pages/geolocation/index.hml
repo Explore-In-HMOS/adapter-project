@@ -1,0 +1,9 @@
+<div class="container" onswipe="goHome">
+    <text class="title">location: {{ location }}</text>
+    <text class="title">locationType: {{ locationType }}</text>
+    <text class="title">coordTypes: {{ coordTypes }}</text>
+    <text class="title">subscribed: {{ subscribed }}</text>
+    <input type="button" class="input" @click="onGetInfo">Get Location</input>
+    <input type="button" class="input" @click="onSubscribe">subscribe</input>
+    <input type="button" class="input" @click="onUnSubscribe">unsubscribe</input>
+</div>
