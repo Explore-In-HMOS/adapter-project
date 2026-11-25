@@ -43,14 +43,14 @@ function detectBigIntUsage(file) {
         if (bigintLiteralPattern.test(line)) {
             console.log(
                 '\x1b[33m%s\x1b[0m',
-                `BigInt literal detected -> ${file}:${index + 1}: Lite wearable devices doesn't support BigInt type.`
+                `BigInt literal detected -> ${file}:${index + 1}: SportWatch (Lite Wearable) devices doesn't support BigInt type.`
             );
         }
         if (bigintCallPattern.test(line)) {
             console.log(
                 '\x1b[33m%s\x1b[0m',
                 `BigInt() constructor detected -> ${file}:${index +
-                1}: Lite wearable devices doesn't support BigInt type.`
+                1}: SportWatch (Lite Wearable) devices doesn't support BigInt type.`
             );
         }
     });
@@ -252,7 +252,7 @@ function showWearEngineWarningLiteToSmart() {
 
 function showWearEngineWarningSmartToLite() {
     printWarningHeader('Wear Engine Configuration Required');
-    console.log('\x1b[37m%s\x1b[0m', 'Transitioning from Smart Wearable JS Project to Lite Wearable JS Project\n');
+    console.log('\x1b[37m%s\x1b[0m', 'Transitioning from Smart Wearable JS Project to SportWatch (Lite Wearable) JS Project\n');
 
     printSection('Configuration Removal', [
         'Remove all Smart JS configurations listed below:',
@@ -262,19 +262,19 @@ function showWearEngineWarningSmartToLite() {
     ]);
 
     printSection('Fingerprint Configuration Changes', [
-        'DO NOT use AppID for fingerprint with lite wearable bundle name on mobile app side.',
-        'Use the lite wearable fingerprint format instead.'
+        'DO NOT use AppID for fingerprint with SportWatch (Lite Wearable) bundle name on mobile app side.',
+        'Use the SportWatch (Lite Wearable) fingerprint format instead.'
     ]);
 
     printSection('Mobile Side Fingerprint Format', [
-        'Mobile side fingerprint used for lite wearable package:',
+        'Mobile side fingerprint used for SportWatch (Lite Wearable) package:',
         'Format: App_package_name_base64Encode(pubKey)',
         '',
         'Reference documentation:',
         'https://developer.huawei.com/consumer/en/doc/connectivity-Guides/signature-0000001053969657'
     ]);
 
-    printSection('Lite Wearable Side Fingerprint', [
+    printSection('SportWatch (Lite Wearable) Side Fingerprint', [
         'For setPeerFingerPrint method:',
         'Use Mobile App SHA-256 certificate fingerprint.',
         'IMPORTANT: Remove all ":" characters from the fingerprint.'

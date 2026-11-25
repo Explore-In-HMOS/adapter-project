@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project simplifies cross-platform development for Huawei Smart Wearable and Lite Wearable devices by providing a
+This project simplifies cross-platform development for Huawei Smart Wearable and SportWatch (Lite Wearable) devices by providing a
 unified development experience.
 
 ## Getting Started
@@ -13,7 +13,7 @@ Please refer to [Getting Started document](/getting-started.md).
 
 ## Problem Statement
 
-Developing for both Huawei Smart Wearable and Lite Wearable platforms presents several challenges:
+Developing for both Huawei Smart Wearable and SportWatch (Lite Wearable) platforms presents several challenges:
 
 - **Inconsistent Library Structure**: Some libraries are identical across platforms, while others differ
 - **Varying Method Signatures**: The same functionality may require different argument orders or parameter types
@@ -35,7 +35,7 @@ We provide wrapper libraries that abstract away platform-specific differences, o
 
 An intelligent generator that automatically converts projects between platforms:
 
-- Converts Lite Wearable projects to Smart Wearable JS projects (and vice versa)
+- Converts SportWatch (Lite Wearable) projects to Smart Wearable JS projects (and vice versa)
 - Handles necessary configuration changes
 - Reorganizes file structure according to target platform requirements
 - Outputs a fully functional project for the target platform
@@ -43,7 +43,7 @@ An intelligent generator that automatically converts projects between platforms:
 ## Limitations
 
 This solution focuses on **common features** available across both platforms. Platform-specific APIs that exist only on
-Smart Wearable or only on Lite Wearable devices are not supported through the adapter.
+Smart Wearable or only on SportWatch (Lite Wearable) devices are not supported through the adapter.
 
 This project currently supports **Smart Wearable JS projects only**. ArkTS projects are not supported at this time.
 
